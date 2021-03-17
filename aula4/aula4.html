@@ -1,0 +1,58 @@
+<html>
+<meta charset="UTF-8">
+<body>
+
+<form action="cadastroPessoa.php" method ="post">
+
+<input type="hidden" name="site" value="www.criarweb.com">
+<input type="hidden" name="sistema_operacional" value="windows_nt">
+
+Nome: <input type="text" name="nomePessoa" maxlength="20"/> <br>
+Senha: <input type="password" name="senha"> <br>
+Descricao: 
+<textarea name="comentario" rows="2" cols="30" maxlength="30">
+</textarea><br>
+Estacoes do ano que voce mais gosta ? <br>
+<select name="estacao"> 
+	<option value="privamera">Primavera</option> 
+	<option value="verao">Verão</option> 
+	<option value="outono">Outono</option> 
+	<option value="inverno">Inverno</option> 
+</select>
+<br><br>
+Qual a cidade que vc mora ? <br>
+<input type="radio" name="cidades" value="1">Porto alegre 
+<br>
+<input type="radio" name="cidades" value="2">cachoeirinha
+<br>
+<input type="radio" name="cidades" value="3">gravatai 
+<br>
+<input type="radio" name="cidades" value="4">canoas
+
+<br><br>
+Qual seu time do coracao ? <br>
+<input type="radio" name="times_futebol" value="inter">inter
+<br>
+<input type="radio" name="times_futebol" value="gremio">gremio
+
+<br><br>
+Comidas preferidas <br>
+<input type="checkbox" name="comida_pref_feijao">Adoro uma feijoada <br>
+<input type="checkbox" name="comida_pref_carne">Adoro uma carne <br>
+<input type="checkbox" name="comida_pref_farofa">Adoro uma farofa <br>
+
+
+<br>
+
+<input type="button" value="Texto escrito no botão">
+
+<br>
+
+<input type="submit" value="salvar"/>
+
+</form>
+
+</body>
+
+
+</html>
