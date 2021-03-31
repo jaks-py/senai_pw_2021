@@ -1,0 +1,53 @@
+<html>
+
+<meta charset="UTF-8">
+
+<script>
+// aqui vou declar minha funcao da tabela.
+
+function criaTabelaDinamica(quantidadeLinhas){
+
+document.write("<table border='1'>");
+
+for(index = 0; index < quantidadeLinhas; index++){
+	if(index % 2 == 0){
+		document.write("<tr bgcolor=red>");
+	}else{
+		document.write("<tr bgcolor=blue>");
+	}
+		document.write("<td>");
+		document.write("linha n."+ index) ;
+		document.write("</td>");
+	document.write("</tr>");
+}
+
+document.write("</table>");
+
+}
+
+
+</script>
+
+<body>
+
+
+<script>
+// aqui vou chamar minha funcao.
+var linhas = prompt("Favor, digitar a quantidade de linhas da tabela");
+criaTabelaDinamica(linhas);
+
+
+criaTabelaDinamica(3);
+criaTabelaDinamica(10);
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+</html>
