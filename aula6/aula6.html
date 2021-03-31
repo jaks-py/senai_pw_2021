@@ -1,0 +1,135 @@
+<html>
+<meta charset="UTF-8">
+
+
+<body>
+
+ISTO É UM HTML.
+<br>
+
+<SCRIPT type="text/javascript"/>
+// aqui é java script
+
+document.write("#estou escrevendo pelo js#<BR>");
+
+var nome = "marcelo";
+var idade = 15;
+var preco = 20.25;
+
+document.write("<h2>meu nome é: " + nome + "</h2>");
+document.write("<br>");
+document.write("<center>Minha idade é: " + idade + "</center>");
+document.write("<br>");
+document.write(preco + " é o preco do produto");
+
+
+// declaracao/criacao das funcoes
+function mostraMeuNome(){
+	document.write("<br><b>Seja bem Vindo: MARCELO SOARES</b><br>");
+}
+mostraMeuNome();
+
+// declaracao da funcao.
+function soma(a, b){
+	var resultado = a + b;
+	return resultado;
+}
+
+
+var totalSoma = soma(5,5);
+document.write("A soma foi " + totalSoma);
+	
+
+function lacoComFor(){
+	for(index = 0; index < 5; index++){
+		document.write("<br>exemplo de laco com for: " + index);
+	}
+}
+
+function lacoComWhile(){
+	index = 0;
+	while(index < 5){
+		document.write("<br>exemplo de laco com while: " + index);
+		index++;
+	}
+}
+
+lacoComFor();
+lacoComWhile();
+
+function escreveEspacoEmBranco( quantidadeEspaco){
+	for(index = 0; index < quantidadeEspaco; index++){
+		document.write("&nbsp;");
+	}
+}
+
+// > maior, < menor, >= maior igual, <= menor, != diferente, == igual 
+// && AND, || OR, ! NOT
+// TABELA VERDADE AND
+//  1 AND 1  = 1
+//  0 AND 1  = 0
+//  0 AND    =  0
+
+// TABELA VERDADE OR
+//  1 OR 1  = 1
+//  0 OR 1  = 1
+//  0 OR 0   = 0
+
+// TABELA VERDADE NOT
+// 0 = 1
+// 1 = 0
+
+
+function verificaTAxaJuros2(taxa1,taxa2){
+	if(taxa1 > 10 || taxa2 >= 15){
+		document.write("<br>as taxas estao validas");
+	}
+}
+verificaTAxaJuros2(5,14);
+
+function verificaTAxaJuros(taxa1,taxa2){
+	if(taxa1 > 10 && taxa2 >= 15){
+		document.write("<br>as taxas estao validas");
+	}
+}
+
+verificaTAxaJuros(9,15);
+
+function verificaSeEMaiorIdade(idade){
+	
+	if(idade >= 18){
+		document.write("<br>é maior de idade");
+	}else{
+		document.write("<br>é menor de idade");
+	}
+}
+
+function verifiSeSaoIguaisValores(a, b){
+	if( a == b){
+	document.write("<br>os valores sao iguais");
+	}
+}
+
+
+verificaSeEMaiorIdade(18);
+verifiSeSaoIguaisValores(7,8);
+
+var cidade = prompt("digite a cidade que vc mora.");
+alert("vc mora na cidade: " + cidade);
+
+</SCRIPT>
+
+<br>
+<br>
+
+Hoje é quarta feira <script> escreveEspacoEmBranco(10) </script> dia de futebol.
+
+
+
+
+
+
+<br>
+</body>
+
+</html>
