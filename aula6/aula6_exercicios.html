@@ -17,10 +17,75 @@
 //document.write("<font color=blue>"+ idade + "</font>");
 
 // exercicio 5
-var valor1 =  prompt("digite o valor 1");
-var valor2 =  prompt("digite o valor 2");
-var somaTotal = parseInt(valor1) + parseInt(valor2);
-alert(somaTotal);
+//var valor1 =  prompt("digite o valor 1");
+//var valor2 =  prompt("digite o valor 2");
+//var somaTotal = parseInt(valor1) + parseInt(valor2);
+//alert(somaTotal);
+
+
+// exercicio 6
+//var valor1 =  prompt("digite o valor 1");
+//var valor2 =  prompt("digite o valor 2");
+//var operacao =  prompt("digite a operacão: 1 = somar, 2 = subtracao");
+
+//if(operacao == 1){
+//	var somaTotal = parseInt(valor1) + parseInt(valor2);
+//	alert("soma: " + somaTotal);
+//}else if(operacao == 2){
+//	var subTotal = parseInt(valor1) - parseInt(valor2);
+//	alert("subtracao: " + subTotal);
+//}else{
+//		alert("opcao invalida");
+//}
+
+// exercicio 7
+//var nome =  prompt("digite o nome");
+//var preco =  prompt("digite o preco");
+//var precoNumerico = parseFloat(preco);
+//if(precoNumerico >= 100 ){
+//	alert("produto maior/igual que 100");
+//}else{
+//	alert("produto do produto é menor que 100");
+//}
+
+// exercicio 8
+//function mostraNomeECidadeNascimento(){
+
+//for(var i=0; i < 100; i++){
+//	document.write("Marcelo, Porto Alegre<br>");
+//}
+// chamando a funcao.
+//mostraNomeECidadeNascimento();
+
+
+// exercicio 9
+function validaEntradaUsuario( nome,  idade){
+	if(nome == ""){
+		alert("Nome invalido, digite novamente.");
+		return false;
+	}
+	
+	if(idade < 0 || idade > 120){
+		alert("Idade invalida");
+		return false;
+	}
+	
+	return true;
+
+}
+
+var retornoFuncao = validaEntradaUsuario("",50);
+if(retornoFuncao == true){
+	alert("Dados preenchidos com sucesso. Obrigado");
+}
+
+
+
+
+
+
+
+
 
 </script>
 
