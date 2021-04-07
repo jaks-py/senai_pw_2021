@@ -1,0 +1,42 @@
+<html>
+
+<meta charset="UTF-8">
+
+<body>
+
+
+<script>
+	function executarOperacao(){
+		var valorV1 = 	document.getElementById("v1").value;
+		var valorV2 = 	document.getElementById("v2").value;
+		if(isNaN(valorV1) == true){
+			document.getElementById("resultado").innerHTML = "Erro: digite somente numeros"
+			document.getElementById("v1").style.backgroundColor = "red";
+		}else if(isNaN(valorV2) == true){
+			document.getElementById("resultado").innerHTML = "Erro: digite somente numeros"
+			document.getElementById("v2").style.backgroundColor = "red";
+		}else {		
+			var resultado = parseFloat(valorV1) + parseFloat(valorV2);			
+			document.getElementById("resultado").innerHTML = "RESULTADO: " + resultado;			
+			document.getElementById("v1").style.backgroundColor = "white";
+			document.getElementById("v2").style.backgroundColor = "white";		
+		}
+	}
+
+
+</script>
+
+<p> Calculadora </p>
+<form>
+Valor 1: <input type="text" name = "v1" id="v1"/> <br>
+Valor 2: <input type="text" name = "v2" id="v2"/> <br>
+<input type ="button" onclick="executarOperacao()" value="somar"/>
+
+<div id="resultado" />
+
+</form>
+
+
+</body>
+
+</html>

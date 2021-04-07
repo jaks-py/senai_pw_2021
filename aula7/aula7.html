@@ -1,0 +1,66 @@
+<html>
+
+<meta charset="UTF-8">
+
+<body>
+
+
+<script>
+
+	function eventoBotao(){
+		alert("eu apertei no botao");
+	}
+	
+	function eventoDigitacao(){
+		//alert("eu digitei algo");
+		var componenteCaixaTexto = document.getElementById("exemplo");
+		var valorDigitado = componenteCaixaTexto.value;
+		if(valorDigitado.includes("ok")){
+			componenteCaixaTexto.style.backgroundColor = "red";
+		}else{
+			componenteCaixaTexto.style.backgroundColor = "white";
+		}
+	}
+	
+	function eventoDigitacaoAoclicar(){
+		alert("eu cliquei na caixa");
+	}
+	
+	var contador = 0;
+	function mostraNome(){
+		var nomeDigitado = document.f.nome.value;
+		alert(nomeDigitado);
+		
+		var nomeDigitado2 =  document.getElementById("name").value;
+		alert(nomeDigitado2);
+		
+		var componenteCaixaTexto = document.getElementById("name");
+		if(contador % 2 == 0){
+			componenteCaixaTexto.style.backgroundColor = "red";
+		}else{
+			componenteCaixaTexto.style.backgroundColor = "blue";
+		}
+		contador++;
+		
+	}
+
+</script>
+
+
+<p>clique no botao a seguir e veja o resultado</p>
+
+<form name="f">
+	<input type="button" onclick="eventoBotao()" value="clique aqui"/>
+	<br><br>
+	<input type="text" name="exemplo" id="exemplo" onkeypress="eventoDigitacao()" 
+										onclick="eventoDigitacaoAoclicar()"/>
+	<br><br>	
+	
+Nome <input type="text" name="nome" id="name" />
+<input type="button" onclick="mostraNome()" value="clique"/>
+	
+</form>
+
+</body>
+
+</body>
