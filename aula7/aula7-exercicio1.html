@@ -12,7 +12,12 @@ function mostraNome(){
 
 function mostraTextoExercicio2(){
 	var texto = document.f.nomeExercicio2.value;
-	alert("texto digitado: " + texto);
+	alert(texto);	
+	if(texto == ""){
+		document.getElementById("resultado").innerHTML = "O campo nome está em branco";
+	}else{
+		document.getElementById("resultado").innerHTML = "";
+	}
 }
 
 </script>
@@ -28,6 +33,7 @@ Clique no botão, para mostrar meu nome e endereço:<br>
 	
 </form>
 
+<div id="resultado" />
 
 </body>
 
