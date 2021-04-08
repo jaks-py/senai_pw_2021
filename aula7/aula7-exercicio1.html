@@ -1,0 +1,34 @@
+<html>
+
+<meta charset="UTF-8">
+
+<body>
+
+<script>
+
+function mostraNome(){
+	alert("Meu nome é marcelo, moro em Cachoeirinha");
+}
+
+function mostraTextoExercicio2(){
+	var texto = document.f.nomeExercicio2.value;
+	alert("texto digitado: " + texto);
+}
+
+</script>
+
+<!-- exercicio 1 -->
+Clique no botão, para mostrar meu nome e endereço:<br>
+<input type="button" name="nome" onclick="mostraNome()" value="clique" />
+<br><br>
+
+<form name="f">
+	Nome: <input type="text" name="nomeExercicio2" />
+	<input type="button"  onclick="mostraTextoExercicio2()" value="clique" />
+	
+</form>
+
+
+</body>
+
+</html> 
