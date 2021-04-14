@@ -1,0 +1,29 @@
+<html>
+
+<meta charset="UTF-8">
+
+<script type="text/javascript" src="funcoes.js"></script>
+
+<body onload="hello()">
+
+
+<!-- exercicio 5, nome, idade, rg e endereço.  -->
+Formulario de cadastro 
+
+<br><br>
+
+<form name="f" action="processa.php" method="post">
+	
+	Nome: <input type="text" name="nome" id="nome"/><br>
+	Idade: <input type="text" name="idade" id="idade"/><br>
+	rg: <input type="text" name="rg" id="rg"/><br>
+	Endereco: <input type="text" name="endereco" id="endereco"/><br>
+	<input type="submit"  onclick="return validacao()" value="Salvar" />
+	
+</form>
+
+<div id="resultado" />
+
+</body>
+
+</html> 
