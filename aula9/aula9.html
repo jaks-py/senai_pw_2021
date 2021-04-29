@@ -1,0 +1,45 @@
+<html>
+
+<meta charset="UTF-8">
+
+<body>
+
+
+<script>
+
+	function valida(){		
+		var nome = document.getElementById("nome").value;
+		var senha = document.getElementById("senha").value;
+		if(nome === "brasil" && senha === "123"){
+			var botao = document.getElementById("botao_abre_janela");
+			botao.disabled = false;
+		}else{
+			alert("Usuário ou senha inválido");
+		}
+	}
+	
+	function abreJanela(){
+		window.open("aula9-1.html");
+		
+	}
+	
+	
+</script>
+
+
+
+<form name="f">		
+Nome:<input type="text" name="nome" id="nome"  />
+	<br>
+senha:<input type="text" name="senha" id="senha" >
+	<br>	
+<input type="button" onclick="valida()" value="clique"/>
+	
+</form>
+
+<input type="button" id="botao_abre_janela" disabled 
+	onclick="abreJanela()" value="clique para abrir a janela"/>
+
+</body>
+
+</body>
