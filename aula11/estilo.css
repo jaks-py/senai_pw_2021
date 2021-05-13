@@ -1,0 +1,30 @@
+.titulo{
+	font-size: 3rem;
+	color : red;
+	margin-top:50px;
+}
+
+.cor-vermelho{
+	color: green;
+	font-weight : bold;
+}
+
+.cor-azul{
+	color: blue;
+}
+
+
+.botao{
+	color : white;
+	background-color : green;
+}
+
+table{
+	 border: 3px solid black;
+	 width: 50%;
+	 margin-top:50px;
+	 margin-left: 50px
+}
+td {
+  text-align: center;
+}
